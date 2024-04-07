@@ -1,9 +1,19 @@
- let firstname = "nithi"; //string
+ 
+//object
+ 
+ let person = {
+    name: "value",
+    age : 22,
+    gender :"Female",
+    ddress : "Chennai, Tamil Nadu, India"
+ } 
+ //object
 
- let age = 24; // integer
+ // Dot Notation
+ console.log(person.age)
 
- let is young = true //boolean
+ //bracket notation
+ console.log(person['gender'])
 
- let lastname = undefined; // undefined
 
- let trophy = null //null
+ 
