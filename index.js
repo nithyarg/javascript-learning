@@ -1,16 +1,13 @@
-// switch case 
- let marks = 90;
+// for(let i = 1; i < 5; i++){
+//     console.log("Number #" , i);
+// }
 
- switch(true){
-    case marks > 50:
-        console.log("pass");
-        break;
-    case marks >90:
-        console.log("super grade");
-        break;
-    case marks < 50:
-        console.log("failed!");
-        break; 
-    default:
-        console.log("unknown grade");           
- }
+// for(initialexpression; condition; step){
+ //  console.log("Number #",i);
+   // }
+
+   for(let i = 1; i <= 5; i++){
+    if (i % 2 !== 0){
+        console.log("Odd Number #" +i);
+    }
+   }
