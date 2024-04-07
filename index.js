@@ -1,8 +1,9 @@
-const name = "nithya";
-// name ="nithi";
+ let firstname = "nithi"; //string
 
-let msg ="Hello my name is "+ name + "I'm learning javascript";
+ let age = 24; // integer
 
-//logging 
-console.log(msg);
- 
+ let is young = true //boolean
+
+ let lastname = undefined; // undefined
+
+ let trophy = null //null
