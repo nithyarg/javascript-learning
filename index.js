@@ -1,38 +1,14 @@
- 
-// //object
- 
-//  let person = {
-//     name: "value",
-//     age : 22,
-//     gender :"Female",
-//     ddress : "Chennai, Tamil Nadu, India"
-//  } 
-//  //object
+// ternary operators
 
-//  // Dot Notation
-//  console.log(person.age)
+// If person's age is more than 18,
+// they are 'Adult' category, otherwise,
+// They are a 'child' category
 
-//  //bracket notation
-//  console.log(person['gender'])
+let age =24;
 
-// let favcolors =["red","white","black"]
+let type = age > 18 ? "Adult Ticket" : "child Ticket"
 
-// console.log(favcolors)
- 
-function greetUser(firstName, lastName){
-    //set of statements
-    let name = "nithi";
-    let msg = "hello"  +  firstName + "" + lastName  +  "I'm learning javascript";
-    console.log(msg)
-}
+ console.log(type);
 
-function add(number1,number2){
-    console.log(number1 + number2)
+ // condition ? 'value1' : 'value2' 
 
-    // -
-    // *
-    // /
-}
-add(45,62)
-
-// greetUser()
