@@ -1,13 +1,33 @@
-// for(let i = 1; i < 5; i++){
-//     console.log("Number #" , i);
-// }
+ // oops
+//  let person = {
+//   name:"anbu",
+//   age: 24,
+//   interest: ['creating ,teaching new things.'],
+//   isalive: true,
+//   address:{
+//     city:'chennai',
+//     state: 'Tamil Nadu',
+//   },
+//   greeting: function(){
+//     let msg = 'my name is ${this.name},i love ${this.interest}';
+//     console.log(msg);
+//   }
+//  };
 
-// for(initialexpression; condition; step){
- //  console.log("Number #",i);
-   // }
+//  console.log(person.interest);
 
-   for(let i = 1; i <= 5; i++){
-    if (i % 2 !== 0){
-        console.log("Odd Number #" +i);
+//factory createperson
+
+function createPerson(name){
+  return {
+    name: name,
+    greeting: function(){
+      let msg = 'My name is ${this.name}';
+      console.log(msg); 
     }
-   }
+  };
+  
+}
+
+let nithi = createPerson("nithi")
+nithi.greeting();
