@@ -1,33 +1,22 @@
- // oops
-//  let person = {
-//   name:"anbu",
-//   age: 24,
-//   interest: ['creating ,teaching new things.'],
-//   isalive: true,
-//   address:{
-//     city:'chennai',
-//     state: 'Tamil Nadu',
-//   },
-//   greeting: function(){
-//     let msg = 'my name is ${this.name},i love ${this.interest}';
-//     console.log(msg);
-//   }
-//  };
+// //Dynamic object
+const person = {
+  name: "Anbu"
+} 
 
-//  console.log(person.interest);
+person.age =24;
+person.greeting =function(){}
 
-//factory createperson
+delete person.greeting;
 
-function createPerson(name){
-  return {
-    name: name,
-    greeting: function(){
-      let msg = 'My name is ${this.name}';
-      console.log(msg); 
-    }
-  };
-  
+console.log(person);
+
+// constructor functions
+
+function person (name) {
+  this.name = name;
+  this.greeting = function () {
+    console.log('my name is ${this.name}');
+  }
 }
 
-let nithi = createPerson("nithi")
-nithi.greeting();
+const person2 = new person(trisha);
