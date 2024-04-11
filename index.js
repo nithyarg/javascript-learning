@@ -1,22 +1,29 @@
-// //Dynamic object
-const person = {
-  name: "Anbu"
-} 
+// Adding element to Javascript Array
+// const number =[4,5,6]
 
-person.age =24;
-person.greeting =function(){}
+// console.log(number)
 
-delete person.greeting;
 
-console.log(person);
+const number =["Apple","Lemon","Grapes"]
 
-// constructor functions
+// number[3]= "Orange";
 
-function person (name) {
-  this.name = name;
-  this.greeting = function () {
-    console.log('my name is ${this.name}');
-  }
-}
 
-const person2 = new person(trisha);
+
+// push 
+number.push("Orange","Strawberries")
+
+//unshift
+number.unshift("Gauva")
+
+//splice
+number.splice(3,0,"Watermelons","Bananas")
+
+  
+
+
+
+
+
+
+console.log(number)
