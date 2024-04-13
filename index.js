@@ -1,14 +1,13 @@
 //combining Arrays
 
-const shopping_cart =[{ item:"Magi"}];
-const additional_cart = ["Matchbox","Salt","Beans","Masala"];
+const shopping_cart =["Beans","Masala","Maagi"];
+const additional_cart = ["Matchbox","Salt",];
 // combine
-let recipe = shopping_cart.concat(additional_cart);
-shopping_cart[0].item = "Noodles";
+// let recipe = shopping_cart.concat(additional_cart);
 
-// Extract
-let extractedInfo = recipe.slice(1,3);
+//spread operator
+let recipe = [...shopping_cart,45,...additional_cart]; 
+
 
 
 console.log(recipe);
-console.log(extractedInfo);
