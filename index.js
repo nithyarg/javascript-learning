@@ -1,20 +1,26 @@
-const dailyRoutine = ["wake up","Eat","Sleep"];
+const dailyRoutine = ["cow","dog","cat","rabbit"];
 
-//For-of 
-for(let routine of dailyRoutine){
-   // logics
-   console.log(routine);
-}
+let dailyRoutines = dailyRoutine.join("'s ");
 
-//For-in 
-for(let routine in dailyRoutine){
-   console.log(routine,dailyRoutine[routine]);
-}
+console.log(dailyRoutines);
 
-//For-each
-dailyRoutine.forEach(function(routine){
-   console.log(routine);
-});
-dailyRoutine.forEach(function(routine,RoutineIndex){
-   console.log(RoutineIndex,routine);
-});
+
+
+let fullName = "Anbu selvan";
+
+let userName = fullName.split(" ");
+
+let firstName = userName[0];
+let lastName = userName[1];
+
+console.log(`My First name is ${firstName} and last name is ${lastName}`);
+
+
+
+let postTitle = "This is my post!";
+
+let postSlug = postTitle.split(" ");
+
+let finalSlug = postSlug.join('-');
+
+console.log(finalSlug);
