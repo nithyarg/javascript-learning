@@ -1,27 +1,14 @@
-//Finding element in javascript array
+//combining Arrays
 
-const items =["Apple","Lemon","Grapes","Apple"]
+const shopping_cart =[{ item:"Magi"}];
+const additional_cart = ["Matchbox","Salt","Beans","Masala"];
+// combine
+let recipe = shopping_cart.concat(additional_cart);
+shopping_cart[0].item = "Noodles";
 
-console.log(items.indexOf("Apple"));
-
-console.log(items.lastIndexOf("Apple"));
-
-console.log(items.indexOf("Grapes") !== -1) //or
-
-
-console.log (items.includes("Banana"));
+// Extract
+let extractedInfo = recipe.slice(1,3);
 
 
-// finding element js Reference array
-
- const orders = [
-    {id:1,item:"Smartphones", quantity:1},
-    {id:2,item:"Maagi", quantity:3},
- ];
-
-  let result = orders.find(function(order){
-   return order.item === "Maagi"
-  })
-
-
-  console.log(result);
+console.log(recipe);
+console.log(extractedInfo);
