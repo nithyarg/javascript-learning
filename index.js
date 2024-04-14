@@ -1,22 +1,37 @@
-// Difference between find and filter methods.
-const items = [
-    {id:1,item: "Android Mobile", cost: 6500},
-    {id:2,item: "iPhone", cost: 27000},
-    {id:3,item: "Windows Phone", cost: 8500},
+// jvascript chaining methods
+
+let products = [
+    {id:1, title: "Android phone",cost:7500},
+    {id:2, title: "Gaming Computer", cost:90500},
+    {id:3, title: "Headphone", cost: 2400},
 ];
 
-let affordableFilter = items.filter(function (value){
-    return value.cost < 10000; 
+// sort it using lowest price.
+let sortByLowestPrice = products.sort(function (a,b){
+    return a.cost - b.cost; //ascending
+    return b.cost - a.cost; //descending
 });
 
-let affordable = items.find(function (value){
-    return value.cost < 10000; 
+// sort it by title ascending
+
+let sortByTitle = sortByLowestPrice.sort(function(a,b){
+    if(a.title < b.title) return -1;
+
+    if(a.title > b.title) return 1;
+
+    return 1;
 });
 
-console.log("affordableFilter", affordableFilter);
+//filter products less than 8000
+ let filtered = sortByTitle.filter(function(value){
+    return value.cost <= 8000;
+});
 
-console.log("affordable - find",affordable);
+// map it like this : // Android phone - 7500
 
-// ["list1","list 2"]
+let final = filtered.map(function (vol){
+    return val.title + " - " + val.cost;
+});
+ 
 
-// {value} 
+console.log(final);
