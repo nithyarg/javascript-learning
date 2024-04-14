@@ -1,37 +1,33 @@
-// jvascript chaining methods
+ // javascript arrays - reduce method 
+ const donations = [45,78,95,65,4851];
 
-let products = [
-    {id:1, title: "Android phone",cost:7500},
-    {id:2, title: "Gaming Computer", cost:90500},
-    {id:3, title: "Headphone", cost: 2400},
-];
+ donations.reduce(function (previousVal, currentVal){
+    // logic
+    console.log("previousVal", previousVal);
+    console.log("currentVal", currentVal);
 
-// sort it using lowest price.
-let sortByLowestPrice = products.sort(function (a,b){
-    return a.cost - b.cost; //ascending
-    return b.cost - a.cost; //descending
-});
+    return previousVal + currentVal;
+ });
 
-// sort it by title ascending
+ let totalDonations= donations.reduce(function(previousval,currentVal){
+    return previousval+currentVal;
+ });
 
-let sortByTitle = sortByLowestPrice.sort(function(a,b){
-    if(a.title < b.title) return -1;
+ console.log("totalDonations",totalDonations);
 
-    if(a.title > b.title) return 1;
 
-    return 1;
-});
+ const shoppingCart = [
+   {id: 1, item:"organic milk",cost: 45},
+   {id: 2, item:"bread",cost: 20},
+   {id: 3, item:"maagi",cost: 12},
+   
+ ];
+ function addCost(accumulator,currentVal){
+      return accumulator + currentVal.cost;
+ }
 
-//filter products less than 8000
- let filtered = sortByTitle.filter(function(value){
-    return value.cost <= 8000;
-});
-
-// map it like this : // Android phone - 7500
-
-let final = filtered.map(function (vol){
-    return val.title + " - " + val.cost;
-});
  
+ 
+ let totalCost = shoppingCart.reduce(addCost,10);
 
-console.log(final);
+ console.log("your total amount is:", totalCost);
