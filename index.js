@@ -1,19 +1,20 @@
-// testing is it odd or even 
-//const numbers = [2,4,6];
+ // Testing elements in javascript Array - reference type
 
-// every()
-// let isEven = numbers.every(function (value){
-//     return value % 2 === 0;
-// });
+ const items = [
+    {id: 1, nmae:"Mobiles", isDeliverable:true},
+    {id: 2, nmae:"Accessories", isDeliverable:true},
+    {id: 3, nmae:"T.V", isDeliverable:false},
+    
+ ];
 
-// console.log("isEven: ",isEven);
+ let allDeliverable = items.every (function(value){
+    return value.isDeliverable == true;
+ });
 
-// some
+ let notDeliverable = items.every (function(value){
+    return value.isDeliverable == true;
+ });
 
-const numbers = [1,2,3,4,5];
 
-let isOdd = numbers.some(function (value){
-    return value % 2 === 1;
-});
-
-console.log("isOdd: ", isOdd);
+ console.log("AllDeliverable",allDeliverable);
+ console.log("NotDeliverable", notDeliverable);
