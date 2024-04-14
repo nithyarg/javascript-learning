@@ -1,25 +1,22 @@
-// filtering a javascript array
+// Difference between find and filter methods.
+const items = [
+    {id:1,item: "Android Mobile", cost: 6500},
+    {id:2,item: "iPhone", cost: 27000},
+    {id:3,item: "Windows Phone", cost: 8500},
+];
 
-// const queue_by_age = [16,32,45];
-
-// let adults = queue_by_age.filter(function (value) {
-//     return value >= 18;
-// });
-
-
-// console.log("adults:", adults);  
-
-
-const numbers = [1,2,3,4,5];
-
-let evenNumbers = numbers.filter(function(value){
-    return value % 2 == 0;
+let affordableFilter = items.filter(function (value){
+    return value.cost < 10000; 
 });
 
-let oddNumbers = numbers.filter(function(value){
-    return value % 2 == 1;
-
+let affordable = items.find(function (value){
+    return value.cost < 10000; 
 });
 
-console.log("Even Numbes", evenNumbers);
-console.log("Odd Numbers", oddNumbers);
+console.log("affordableFilter", affordableFilter);
+
+console.log("affordable - find",affordable);
+
+// ["list1","list 2"]
+
+// {value} 
