@@ -1,26 +1,22 @@
-const dailyRoutine = ["cow","dog","cat","rabbit"];
+// testing a javascript array with examples
+ // Allow only adults above 18
 
-let dailyRoutines = dailyRoutine.join("'s ");
+const queue_by_age = [24,32,45];
 
-console.log(dailyRoutines);
+// let isAllowed = queue_by_age.every(function (value,index,array){
+//     console.log(`value: ${value}`);
+//     console.log("index",index);
+//     console.log("array",array);
+// }) ;
 
+let isAllowed = queue_by_age.every(function (value,index,array){
+    return value >= 18;
+});
 
-
-let fullName = "Anbu selvan";
-
-let userName = fullName.split(" ");
-
-let firstName = userName[0];
-let lastName = userName[1];
-
-console.log(`My First name is ${firstName} and last name is ${lastName}`);
-
+console.log("isAllowed: ",isAllowed); 
 
 
-let postTitle = "This is my post!";
-
-let postSlug = postTitle.split(" ");
-
-let finalSlug = postSlug.join('-');
-
-console.log(finalSlug); 
+// every() => true, ella condtions true va irrukanum apa tha true o/p varum.
+// some()  => true , intha condtions la  oru number value true va irruntha ve 
+               // pothum. o/p la true varum
+                
