@@ -23,4 +23,4 @@ let postSlug = postTitle.split(" ");
 
 let finalSlug = postSlug.join('-');
 
-console.log(finalSlug);
+console.log(finalSlug); 
