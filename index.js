@@ -1,20 +1,25 @@
- // Testing elements in javascript Array - reference type
+// filtering a javascript array
 
- const items = [
-    {id: 1, nmae:"Mobiles", isDeliverable:true},
-    {id: 2, nmae:"Accessories", isDeliverable:true},
-    {id: 3, nmae:"T.V", isDeliverable:false},
-    
- ];
+// const queue_by_age = [16,32,45];
 
- let allDeliverable = items.every (function(value){
-    return value.isDeliverable == true;
- });
-
- let notDeliverable = items.every (function(value){
-    return value.isDeliverable == true;
- });
+// let adults = queue_by_age.filter(function (value) {
+//     return value >= 18;
+// });
 
 
- console.log("AllDeliverable",allDeliverable);
- console.log("NotDeliverable", notDeliverable);
+// console.log("adults:", adults);  
+
+
+const numbers = [1,2,3,4,5];
+
+let evenNumbers = numbers.filter(function(value){
+    return value % 2 == 0;
+});
+
+let oddNumbers = numbers.filter(function(value){
+    return value % 2 == 1;
+
+});
+
+console.log("Even Numbes", evenNumbers);
+console.log("Odd Numbers", oddNumbers);
